@@ -23,7 +23,10 @@ To optimize the water outflow distribution for the next five years, we need to h
 
 
 ### Result
-It worked like a charm. The graph below describes the distribution of water over 5 years. All variables have a yearly pattern. 
+It worked like a charm. 
+![image](https://user-images.githubusercontent.com/48485276/198869677-aa905850-fe3a-4fc6-a260-250a3d7c0083.png)
+
+The graph below describes the distribution of water over 5 years. All variables have a yearly pattern. 
 
 ![image](https://user-images.githubusercontent.com/48485276/198869451-b1fd0b18-8189-4692-94a0-f1192b8db1ad.png)
 
