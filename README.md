@@ -19,6 +19,7 @@ NLopt is a free/open-source library for nonlinear optimization. We need to optim
 
 ### Result
 It worked like a charm.
+
 ![image](https://user-images.githubusercontent.com/48485276/198867182-f8a79d5a-0da4-4b51-8923-f6f5594441dc.png)
 
 
