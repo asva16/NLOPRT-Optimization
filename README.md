@@ -15,7 +15,10 @@ Water enters the reservoir (It) thereby increasing the current water level (St).
 ![image](https://user-images.githubusercontent.com/48485276/198865721-8808bb5a-9c5a-40e1-ae43-0091526af693.png)
 
 ### Optimization
-NLopt is a free/open-source library for nonlinear optimization. We need to optimize α,β, and γ such that S_(t+1)>min⁡(S_(t+1)). NLopt is chosen because it has built-in algorithms for unconstrained optimization, bound-constrained optimization, and general nonlinear inequality/equality constraints. We added a limitation on these three parameters such that for the next three observations, S_(t+1)>min⁡(S_(t+1) ),S_(t+2)>min⁡(S_(t+2) ), and S_(t+3)>min⁡(S_(t+3) ) are satisfied even we use the same parameters. Even NLopt is a nonlinear optimization, it can solve linear optimization too.
+NLopt is a free/open-source library for nonlinear optimization. We need to optimize α, β, and γ such that S_(t+1)>min⁡(S_(t+1)). NLopt is chosen because it has built-in algorithms for unconstrained optimization, bound-constrained optimization, and general nonlinear inequality/equality constraints. We added a limitation on these three parameters such that for the next three observations, S_(t+1)>min⁡(S_(t+1) ),S_(t+2)>min⁡(S_(t+2) ), and S_(t+3)>min⁡(S_(t+3) ) are satisfied even we use the same parameters. Even NLopt is a nonlinear optimization, it can solve linear optimization too.
+
+Constraints :
+0 <= α, β, and γ <=1 
 
 To optimize the water outflow distribution for the next five years, we need to have an initial value of  S_t, predictions of I_t, and historical value of RP_t,IRR_t,WS_t,E_t, and DS_t. The I_t variable has 690 observations. I_t is calculated by taking the average the inflow for 10 days. We create a time-series model of I_t using Seasonal ARIMA and predict the value for the next 180 observations.
  
